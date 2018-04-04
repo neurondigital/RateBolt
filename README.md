@@ -2,26 +2,28 @@
 Improve your App Ratings through user feedback
 
 
-##Install via Gradle
+## Install via Gradle
 Add the following dependency in your gradle file.
-'''dependencies {    
-    //your other dependencies here
-    compile 'com.neurondigital.ratebolt:ratebolt:0.2.15'
-}
-'''
+```
+    dependencies {    
+        //your other dependencies here
+        compile 'com.neurondigital.ratebolt:ratebolt:0.2.15'
+    }
+```
 
-##Add a RateView - Basic
+## Add a RateView - Basic
 Add the RateView to your xml layout file. Replace <API KEY HERE> with your API Key.
-  '''<com.neurondigital.ratebolt.RateView xmlns:rateview="http://schemas.android.com/apk/res-auto"
+```
+    <com.neurondigital.ratebolt.RateView xmlns:rateview="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/rateview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 rateview:apiKey="<API KEY HERE>"
                 rateview:ratingType="numbers"/>
-  '''
+```
   
-##Add a RateView - Advanced
-###More Options
+## Add a RateView - Advanced
+### More Options
 Change the following parameters for more control:
 
 clearAfterRate - true: resets ui after app is rated. false: the starts will remain highlighted after rating.
@@ -43,7 +45,7 @@ rateUsTitle - Change the default rate prompt title.
 rateUsDescription - Change the default rate prompt description.
 
 Example Code with all parameters:
-'''<com.neurondigital.ratebolt.RateView xmlns:rateview="http://schemas.android.com/apk/res-auto"
+```<com.neurondigital.ratebolt.RateView xmlns:rateview="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/rateview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -63,21 +65,21 @@ Example Code with all parameters:
                 rateview:showAfter="0"
                 rateview:textColor="?android:attr/textColorPrimary"
                 rateview:textSelectedColor="?attr/colorAccent" />
-  '''
+```
   
-##Attach a Parent Container
+## Attach a Parent Container
 With ratebolt it is also possible to customise the rate view by adding a container parent which changes its visibility together with the RateView.
 
 Just add a container layout in xml, then set it as the parent of the rateView programatically.
 
 Java code
-'''LinearLayout parentContainer = (LinearLayout) findViewById(R.id.parentContainer);
+```LinearLayout parentContainer = (LinearLayout) findViewById(R.id.parentContainer);
 RateView rateView = (RateView) findViewById(R.id.rateview);
 rateView.setParentView(parentContainer);
-'''
+```
 
 xml layout code
-'''
+```
  <LinearLayout
         android:id="@+id/parentContainer"
         android:layout_width="wrap_content"
@@ -107,4 +109,4 @@ xml layout code
         </LinearLayout>
 
     </LinearLayout>
-'''
+```
