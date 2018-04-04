@@ -26,23 +26,23 @@ Add the RateView to your xml layout file. Replace <API KEY HERE> with your API K
 ### More Options
 Change the following parameters for more control:
 
-clearAfterRate - true: resets ui after app is rated. false: the starts will remain highlighted after rating.
-frequency - Every how many times does the view show. Set to 0 to always show.
-keepVisibleAfterRate - true: view stays visible after rate/feedback. false: view gets hidden after rate/feedback.
-log - true: logcat logging on. false: logging off.
-rateOnlyOnce - true: always hide when the user rates once. false: Keep showing rate view even if user has rated.
-rateUsLink - The user will be taken to the Google play page of the App (url determined automatically from package id). Set this parameter to take the user to another url of your choice for rating.
-ratingType - Sets the rating mode. Options available: 'numbers', 'smilies' or 'stars'.
-showAfter - Ideally you show the rate prompt after the user had the chance to use the app a couple of times. Set this parameter to set after how many times to show promot. Set to 0 to show immediatly.
-textColor - Text and stars color.
-textSelectedColor - Highlight color.
+1. clearAfterRate - true: resets ui after app is rated. false: the starts will remain highlighted after rating.
+2. frequency - Every how many times does the view show. Set to 0 to always show.
+3. keepVisibleAfterRate - true: view stays visible after rate/feedback. false: view gets hidden after rate/feedback.
+4. log - true: logcat logging on. false: logging off.
+5. rateOnlyOnce - true: always hide when the user rates once. false: Keep showing rate view even if user has rated.
+6. rateUsLink - The user will be taken to the Google play page of the App (url determined automatically from package id). Set this parameter to take the user to another url of your choice for rating.
+7. ratingType - Sets the rating mode. Options available: 'numbers', 'smilies' or 'stars'.
+8. showAfter - Ideally you show the rate prompt after the user had the chance to use the app a couple of times. Set this parameter to set after how many times to show promot. Set to 0 to show immediatly.
+9. textColor - Text and stars color.
+10. textSelectedColor - Highlight color.
 
 Customise Text:
-feedbackTitle - Change the default feedback title.
-feedbackDescription - Change the default feedback description.
-feedbackHint - Change the default feedback hint.
-rateUsTitle - Change the default rate prompt title.
-rateUsDescription - Change the default rate prompt description.
+1. feedbackTitle - Change the default feedback title.
+2. feedbackDescription - Change the default feedback description.
+3. feedbackHint - Change the default feedback hint.
+4. rateUsTitle - Change the default rate prompt title.
+5. rateUsDescription - Change the default rate prompt description.
 
 Example Code with all parameters:
 ```<com.neurondigital.ratebolt.RateView xmlns:rateview="http://schemas.android.com/apk/res-auto"
