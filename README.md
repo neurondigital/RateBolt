@@ -21,6 +21,9 @@ Add the RateView to your xml layout file. Replace <API KEY HERE> with your API K
                 rateview:apiKey="<API KEY HERE>"
                 rateview:ratingType="numbers"/>
 ```
+    
+## Get API Key  
+To use Ratebolt you need to create an account from [Ratebolt.com](http://ratebolt.com/integrate) and generate an API KEY which you can use instead of'<API KEY HERE>'
   
 ## Add a RateView - Advanced
 ### More Options
