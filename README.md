@@ -45,7 +45,8 @@ Customise Text:
 5. rateUsDescription - Change the default rate prompt description.
 
 Example Code with all parameters:
-```<com.neurondigital.ratebolt.RateView xmlns:rateview="http://schemas.android.com/apk/res-auto"
+```
+<com.neurondigital.ratebolt.RateView xmlns:rateview="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/rateview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
